@@ -54,6 +54,10 @@ $text-color: #292929;
 
           display: flex;
           justify-content: space-between;
+
+          @media (max-width: 800px) {
+               display: none;
+          }
      }
 
      &__logo {
@@ -62,6 +66,10 @@ $text-color: #292929;
           font-size: 30px;
           line-height: 0.8;
           color: $color1;
+
+          @media (max-width: 800px) {
+               margin: 0 auto;
+          }
      }
 
      &__link {
@@ -116,6 +124,10 @@ $text-color: #292929;
 
           transition: 0.25s linear;
      }
+
+     @media (max-width: 800px) {
+          position: inherit;
+     }
 }
 
 .green-btn {
@@ -157,16 +169,29 @@ $text-color: #292929;
      background-size: cover;
      border-top: 1px solid #E5E5E5;
 
+     @media (max-width: 800px) {
+          min-height: 600px;
+          background-position: left;
+     }
+
+
      &__title {
           max-width: 700px;
           margin: 175px 0 50px 0;
 
-          font-family: 'Georgia', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-weight: bold;
           font-size: 50px;
           line-height: 1.15;
 
           color: $color1;
+
+          @media (max-width: 800px) {
+               font-size: 40px;
+               margin: 75px auto 50px auto;
+               text-align: center;
+
+          }
      }
 
      &__subtitle {
@@ -178,6 +203,11 @@ $text-color: #292929;
           line-height: 1.55;
 
           color: $text-color;
+
+          @media (max-width: 800px) {
+               font-size: 18px;
+               margin: 0 auto 30px auto;
+          }    
      }
 }
 
@@ -187,6 +217,10 @@ $text-color: #292929;
 
 .hiw {
      padding-top: 120px;
+
+     @media (max-width: 800px) {
+          padding-top: 50px;
+     }    
 }
 
 .hiw-title {
@@ -194,15 +228,24 @@ $text-color: #292929;
      justify-content: space-between;
      align-items: center;
 
+     @media (max-width: 800px) {
+          flex-direction: column;
+     }
+
      &__green {
           max-width: 40%;
 
-          font-family: 'Georgia', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-weight: bold;
           font-size: 36px;
           line-height: 1.58;
 
           color: $color1;
+
+          @media (max-width: 800px) {
+               max-width: 100%;    
+               font-size: 28px;
+          }
      }
 
      &__black {
@@ -215,6 +258,12 @@ $text-color: #292929;
           line-height: 1.5;
 
           color: $text-color;
+
+          @media (max-width: 800px) {
+               margin-top: 30px;
+               max-width: 100%;
+               font-size: 18px;    
+          }
      }
 }
 
@@ -223,12 +272,19 @@ $text-color: #292929;
      margin: 0 auto;
      margin-top: 100px;
 
-     font-family: 'Georgia', sans-serif;
+
+     font-family: 'Lato', sans-serif;
      font-weight: bold;
      font-size: 36px;
      line-height: 1.58;
 
      color: $color1;
+
+     @media (max-width: 800px) {
+          margin-top: 75px;
+          font-size: 30px;     
+          text-align: center;
+     }
 }
 
 .expect {
@@ -237,10 +293,19 @@ $text-color: #292929;
      justify-content: space-between;
      align-items: center;
 
+     @media (max-width: 800px) {
+          flex-direction: column;     
+          margin-top: 50px;    
+     }
+
      &__list {
           align-self: center;
           max-width: 30%;
 
+          @media (max-width: 800px) {
+               max-width: 100%;    
+               margin-top: -20px;
+          }
      }
 
      &__li {
@@ -251,10 +316,19 @@ $text-color: #292929;
           line-height: 1.5;
 
           color: $text-color;  
+          
+          @media (max-width: 800px) {
+               font-size: 18px;    
+          }
      }
 
      &__photo {
           max-width: 60%;
+
+          @media (max-width: 800px) {
+               max-width: 100%; 
+               margin-top: 30px;   
+          }
      }
 
      &__img {
@@ -266,6 +340,10 @@ $text-color: #292929;
 .cards {
      display: flex;
      justify-content: space-between;
+
+     @media (max-width: 800px) {
+          flex-direction: column;         
+     }
 }
 
 .card {
@@ -277,6 +355,12 @@ $text-color: #292929;
      flex-direction: column;
      flex-shrink: 1;
 
+     @media (max-width: 800px) {
+          width: 100%;
+          margin: 30px auto 20px auto;
+          flex-shrink: 0;         
+     }
+
      &__text {
           max-width: 100%;
           margin-bottom: 60px;
@@ -287,6 +371,11 @@ $text-color: #292929;
           line-height: 1.5;
 
           color: #424242;
+
+          @media (max-width: 800px) {
+               font-size: 18px;
+               margin-bottom: 30px;    
+          }
      }
 
      img {
@@ -296,10 +385,18 @@ $text-color: #292929;
 
 .card:nth-child(2) {
      margin-top: 325px;
+
+     @media (max-width: 800px) {
+          margin: 0 auto;         
+     }
 }
 
 .card:nth-child(3) {
      margin-top: 150px;
+
+     @media (max-width: 800px) {
+          margin: 0 auto;         
+     }
 }
 
 .c-img {
@@ -311,17 +408,21 @@ $text-color: #292929;
      &__number {
           margin-right: -75px;
 
-          font-family: 'Georgia', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-size: 150px;
           line-height: 1.5;
 
           text-align: center;
 
           color: rgba(1, 153, 109, 0.2);
+
+          @media (max-width: 800px) {
+               font-size: 100px;    
+          }
      }
 
      &__title {
-          font-family: 'Georgia', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-weight: bold;
           font-size: 30px;
           line-height: 1.5;
@@ -329,6 +430,10 @@ $text-color: #292929;
           text-align: center;
 
           color: $text-color;
+
+          @media (max-width: 800px) {
+               font-size: 28px;    
+          }
      }
 }
 
@@ -346,17 +451,26 @@ $text-color: #292929;
      
      text-align: center;
      font-family: 'Lato', sans-serif;
-     font-weight: 500;
-     font-size: 40px;
+     font-weight: bold;
+     font-size: 36px;
      line-height: 1.5;
 
-     color: $color1
+     color: $color1;
+
+     @media (max-width: 800px) {
+          font-size: 30px;      
+          margin-bottom: 50px;   
+     }
 }
 
 .org-card {
      display: flex;
      justify-content: space-between;
      align-items: flex-start;
+
+     @media (max-width: 800px) {
+          flex-direction: column;         
+     }
 
      &__text {
           max-width: 50%;
@@ -368,17 +482,36 @@ $text-color: #292929;
           line-height: 1.5;
 
           color: $text-color;
+
+          @media (max-width: 800px) {
+               max-width: 100%;  
+               order: 2; 
+          }
      }
 
      &__name {
           margin-bottom: 30px;
+          font-family: 'Lato', sans-serif;
+          font-weight: 500;
           font-size: 36px;
+          line-height: 1.5;
+
           color: $color1;
+
+          @media (max-width: 800px) {
+               order: -1; 
+               margin: 0 auto; 
+               font-size: 30px;  
+          }
      }
 
      &__span {
           display: block;
           margin: 30px 0 20px 0;
+
+          @media (max-width: 800px) {
+                
+          }
      }
 
      &__ul {
@@ -390,6 +523,13 @@ $text-color: #292929;
      &__photo {
           max-width: 40%;
           margin-top: 90px;
+
+          @media (max-width: 800px) {
+               max-width: 75%;   
+               order: 1; 
+               margin: 0 auto;
+               margin-top: 30px;
+          }
      }
 
      &__img {
@@ -405,6 +545,10 @@ $text-color: #292929;
 .cost {
      padding-top: 70px;
 
+     @media (max-width: 800px) {
+         padding-top: 0;
+     }
+
      &__title {
           margin-bottom: 30px;
           max-width: 600px;
@@ -415,6 +559,12 @@ $text-color: #292929;
           line-height: 1.5;
 
           color: $color1;
+
+          @media (max-width: 800px) {
+               font-size: 30px;
+               text-align: center;
+          }
+     
      }
 
      &__text {
@@ -427,6 +577,11 @@ $text-color: #292929;
           line-height: 1.5;
 
           color: $text-color;
+
+          @media (max-width: 800px) {
+               margin-bottom: 40px;
+          }
+     
      }
 
      &__title_right {
@@ -458,12 +613,27 @@ $text-color: #292929;
 
      color: $text-color;
 
+     @media (max-width: 800px) {
+          padding: 15px 0;
+     }
+
+
      &__org {
           max-width: 300px;
+
+          @media (max-width: 800px) {
+               max-width: 40%;
+          }
+     
      }
 
      &__dev {
           max-width: 300px;
+
+          @media (max-width: 800px) {
+               max-width: 40%;
+          }
+     
      };
 }
 
