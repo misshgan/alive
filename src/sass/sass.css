@@ -140,7 +140,7 @@
 /* TOP */
 .top {
   min-height: 896px;
-  background: url(/src/images/top_bg.jpg);
+  background: url("/src/images/top_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -184,9 +184,7 @@
 }
 
 .hiw-title__green {
-  max-width: 550px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  max-width: 40%;
   font-family: 'Georgia', sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -195,7 +193,7 @@
 }
 
 .hiw-title__black {
-  max-width: 670px;
+  max-width: 50%;
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -223,12 +221,16 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .expect__list {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  max-width: 30%;
 }
 
 .expect__li {
@@ -241,7 +243,7 @@
 }
 
 .expect__photo {
-  max-width: 600px;
+  max-width: 60%;
 }
 
 .expect__img {
@@ -322,8 +324,7 @@
 
 /* ORGANIZATORS */
 .organizators {
-  background: #245852;
-  padding: 50px 0;
+  padding-top: 70px;
 }
 
 .org-title {
@@ -334,7 +335,7 @@
   font-weight: 500;
   font-size: 40px;
   line-height: 1.5;
-  color: #fff;
+  color: #01996D;
 }
 
 .org-card {
@@ -350,18 +351,19 @@
 }
 
 .org-card__text {
-  max-width: 600px;
+  max-width: 50%;
   margin-bottom: 60px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
-  color: #fff;
+  color: #292929;
 }
 
 .org-card__name {
   margin-bottom: 30px;
   font-size: 36px;
+  color: #01996D;
 }
 
 .org-card__span {
@@ -375,7 +377,7 @@
 }
 
 .org-card__photo {
-  max-width: 400px;
+  max-width: 40%;
   margin-top: 90px;
 }
 
@@ -383,5 +385,75 @@
   max-width: 100%;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* COST */
+.cost {
+  padding-top: 70px;
+}
+
+.cost__title {
+  margin-bottom: 30px;
+  max-width: 600px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #01996D;
+}
+
+.cost__text {
+  max-width: 800px;
+  margin-bottom: 80px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #292929;
+}
+
+.cost__title_right {
+  margin-left: auto;
+}
+
+.cost__text_right {
+  margin-left: auto;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid gray;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #292929;
+}
+
+.footer-content__org {
+  max-width: 300px;
+}
+
+.footer-content__dev {
+  max-width: 300px;
+}
+
+.social {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #01996D;
 }
 /*# sourceMappingURL=sass.css.map */

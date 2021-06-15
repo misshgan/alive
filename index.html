@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="src/sass/sass.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/icons/style.css">
     <title>Alivio</title>
 </head>
 <body>
@@ -16,16 +17,16 @@
             <div class="h-content">
                 <span class="header__logo">ЖиваЯ</span>
                 <nav class="header__nav">
-                    <a class="header__link" href="#">Главная</a>
-                    <a class="header__link" href="#">Для кого это</a>
-                    <a class="header__link" href="#">Что Вас ждёт</a>
-                    <a class="header__link" href="#">Ведущие</a>
+                    <a class="header__link" href="#1">Главная</a>
+                    <a class="header__link" href="#2">Что вас ждёт</a>
+                    <a class="header__link" href="#3">Ведущие</a>
+                    <a class="header__link" href="#4">Стоимость</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <div class="top">
+    <div class="top" id="1">
         <div class="container">
             <div class="top__title">Праздник жизни. <br> Пик энергии. <br> Время Силы - летнее солнцестояние!</div>
             <div class="top__subtitle">Наш  фестиваль "ЖиваЯ"  во второй раз открывает свои двери для женщин, которые устали от суеты серых будней и хотят перезагрузки.</div>
@@ -33,7 +34,7 @@
         </div>
     </div>
 
-    <div class="hiw">
+    <div class="hiw" id="2">
         <div class="container">
             <div class="hiw-title">
                 <div class="hiw-title__green">
@@ -109,7 +110,7 @@
         </div>
     </div>
 
-    <div class="organizators">
+    <div class="organizators" id="3">
         <div class="container">
             <div class="org-title">Вас будут сопровождать</div>
             <div class="org-cards">
@@ -148,6 +149,7 @@
                             </ul>
                             <span class="org-card__span">Проводит индивидуальные консультации, онлайн и живые тренинги. 
                                 Занимается послеродовым пеленанием женщин, закрытием родов и сложных жизненных ситуаций (разводов, перинатальных потерь).</span>
+                            <a href="https://www.instagram.com/svetlana_soulowoman/?utm_medium=copy_link" class="social"> Страница в instagram  <span class="icon-instagram"></span></a>
                         </div>
                     </div>
                     <div class="org-card__photo">
@@ -175,40 +177,49 @@
                                 <li class="org-card__li">- создала женский авторский живой марафон "Танец ипостасей" о женской целостности  и гармоничном проявлении своих архетипов.</li>
                                 <li class="org-card__li">- ведущая практики "Интуитивные танцы",  как терапии различных негативных состояний и блоков в теле, радостного погружения в тело и движение.</li>
                             </ul>
-                            
+                            <span class="org-card__span"></span>
+                            <a href="tg://resolve?domain=+380 67 304 81 04" class="social"> Написать в Telegram <span class="icon-telegram"></span></a>
                         </div>
-                    </div>
-                </div>
-
-                <div class="org-card">
-                    <div class="org-card__text">
-                        <div class="org-card__name">
-                            Оксанита Мартынюк
-                        </div>
-                        <div class="org-card__discription">
-                            <span class="org-card__span">"Сотрудничество и сотворчество женщин - основа гармоничной жизни".</span>
-                            <span class="org-card__span">Магистр психологии, три года ведущая международного проекта "Психология третьего тысячелетия" в городе Измаиле, ведущая проекта "Женский круг "Азбука женщины".</span>
-                            <ul class="org-card__ul">
-                                <li class="card-org__li">- психосоматолог</li>
-                                <li class="card-org__li">- космоэнергет</li>
-                                <li class="card-org__li">- проводник к своим дарам и талантам, к пробуждению</li>
-                            </ul>
-                            <span class="org-card__span">Занимается:</span>
-                            <ul class="org-card__ul">
-                                <li class="org-card__li">- потоковой психологией     </li>
-                                <li class="org-card__li">- повиванием и послеродовым восстановлением</li>
-                                <li class="org-card__li">- психологической настройкой и подготовкой к лёгким родам</li>
-                                <li class="org-card__li">- исцелением родовых программ</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="org-card__photo">
-                        <img class="org-card__img" src="src/images/org3.jpg" alt="organizator">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="cost" id="4">
+        <div class="container">
+            <div class="cost__title">Какова стоимость мероприятия?</div>
+            <div class="cost__text">2800 грн, для тех кто внесёт предоплату 500 грн до 20 июня. 
+                С 21 июня цена - 3300 грн.
+                Предоплата не возвращается и является скидкой, которая предоставляется участнице, быстро согласившейся вас заменить.</div>
+            <div class="cost__title cost__title_right">Что входит в эту стоимость?</div>
+            <div class="cost__text cost__text_right">
+                <ul>
+                    <li>проживание в 3-х местных номерах со всеми удобствами; </li>
+                    <li>3-х разовое вегатарианское питание (кто хотел попробовать, у вас будет такая возможность);</li>
+                    <li>всё, что будет происходить на нашем фестивале;</li>
+                    <li>фото и видео-воспоминание;</li>
+                    <li>информативная поддержка в закрытой группе Телеграм.</li>
+                </ul>
+
+                Можете взять с собой ребёнка. Для детей будет отдельная программа.
+                Стоимость за ребёнка - 1000 грн.
+                Бонусом для каждой из участниц будет подарок!
+            </div>
+            <div class="cost__title">Что не входит в эту стоимость?</div>
+            <div class="cost__text">Tрансфер, но мы позаботимся о вашей комфортной доставке с Николаева на место трансформаций и обратно.</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer__org">По всем вопросам обращаться к организатору:
+                    Елена. <a href="tg://resolve?domain=+380 67 304 81 04" class="social"> Написать в Telegram <span class="icon-telegram"></span></a> </div>
+                <div class="footer__dev">developed by <a href="tg://resolve?domain=@baristaaaaaaaaa" class="social">MedveDev <span class="icon-telegram"></span></a> &copy; All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

@@ -151,7 +151,7 @@ $text-color: #292929;
 
 .top {
      min-height: 896px;
-     background: url(/src/images/top_bg.jpg);
+     background: url('/src/images/top_bg.jpg');
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
@@ -195,8 +195,7 @@ $text-color: #292929;
      align-items: center;
 
      &__green {
-          max-width: 550px;
-          flex-shrink: 0;
+          max-width: 40%;
 
           font-family: 'Georgia', sans-serif;
           font-weight: bold;
@@ -207,7 +206,7 @@ $text-color: #292929;
      }
 
      &__black {
-          max-width: 670px;
+          max-width: 50%;
 
           font-family: 'Lato', sans-serif;
           font-style: normal;
@@ -236,9 +235,12 @@ $text-color: #292929;
      margin-top: 100px;
      display: flex;
      justify-content: space-between;
+     align-items: center;
 
      &__list {
           align-self: center;
+          max-width: 30%;
+
      }
 
      &__li {
@@ -252,7 +254,7 @@ $text-color: #292929;
      }
 
      &__photo {
-          max-width: 600px;
+          max-width: 60%;
      }
 
      &__img {
@@ -335,8 +337,7 @@ $text-color: #292929;
 /* ORGANIZATORS */ 
 
 .organizators {
-     background: #245852;
-     padding: 50px 0;
+     padding-top: 70px;
 }
 
 .org-title {
@@ -349,7 +350,7 @@ $text-color: #292929;
      font-size: 40px;
      line-height: 1.5;
 
-     color: #fff;
+     color: $color1
 }
 
 .org-card {
@@ -358,7 +359,7 @@ $text-color: #292929;
      align-items: flex-start;
 
      &__text {
-          max-width: 600px;
+          max-width: 50%;
           margin-bottom: 60px;
 
           font-family: 'Lato', sans-serif;
@@ -366,12 +367,13 @@ $text-color: #292929;
           font-size: 18px;
           line-height: 1.5;
 
-          color: #fff;
+          color: $text-color;
      }
 
      &__name {
           margin-bottom: 30px;
           font-size: 36px;
+          color: $color1;
      }
 
      &__span {
@@ -386,7 +388,7 @@ $text-color: #292929;
 
 
      &__photo {
-          max-width: 400px;
+          max-width: 40%;
           margin-top: 90px;
      }
 
@@ -394,4 +396,84 @@ $text-color: #292929;
           max-width: 100%;
           box-shadow: 0 0 5px rgba(0,0,0,0.5);
      }
+}
+
+
+
+/* COST */ 
+
+.cost {
+     padding-top: 70px;
+
+     &__title {
+          margin-bottom: 30px;
+          max-width: 600px;
+
+          font-family: 'Lato', sans-serif;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 1.5;
+
+          color: $color1;
+     }
+
+     &__text {
+          max-width: 800px;
+          margin-bottom: 80px;
+
+          font-family: 'Lato', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.5;
+
+          color: $text-color;
+     }
+
+     &__title_right {
+          margin-left: auto;
+     }
+
+     &__text_right {
+          margin-left: auto;
+     }
+}
+
+
+
+/* FOOTER */ 
+
+.footer {
+     border-top: 1px solid gray;
+}
+
+.footer-content {
+     display: flex;
+     justify-content: space-between;
+     padding: 30px 0;
+
+     font-family: 'Lato', sans-serif;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 1.5;
+
+     color: $text-color;
+
+     &__org {
+          max-width: 300px;
+     }
+
+     &__dev {
+          max-width: 300px;
+     };
+}
+
+.social {
+     text-decoration: none;
+
+     font-family: 'Lato', sans-serif;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 1.5;
+
+     color: $color1;
 }
