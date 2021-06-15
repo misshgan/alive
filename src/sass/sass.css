@@ -158,7 +158,7 @@
 /* TOP */
 .top {
   min-height: 896px;
-  background: url("/src/images/top_bg.jpg");
+  background: url("src/images/top_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
