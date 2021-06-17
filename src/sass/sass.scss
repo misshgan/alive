@@ -163,7 +163,7 @@ $text-color: #292929;
 
 .top {
      min-height: 896px;
-     background: url('src/images/top_bg.jpg');
+     background: url('/src/images/top_bg.jpg');
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
@@ -172,6 +172,7 @@ $text-color: #292929;
      @media (max-width: 800px) {
           min-height: 600px;
           background-position: left;
+          padding-bottom: 30px;
      }
 
 
@@ -466,7 +467,6 @@ $text-color: #292929;
 .org-card {
      display: flex;
      justify-content: space-between;
-     align-items: flex-start;
 
      @media (max-width: 800px) {
           flex-direction: column;         
@@ -502,16 +502,13 @@ $text-color: #292929;
                order: -1; 
                margin: 0 auto; 
                font-size: 30px;  
+               text-align: center;
           }
      }
 
      &__span {
           display: block;
           margin: 30px 0 20px 0;
-
-          @media (max-width: 800px) {
-                
-          }
      }
 
      &__ul {
@@ -528,7 +525,8 @@ $text-color: #292929;
                max-width: 75%;   
                order: 1; 
                margin: 0 auto;
-               margin-top: 30px;
+               margin-top: 10px;
+               margin-bottom: 30px;
           }
      }
 
@@ -615,26 +613,17 @@ $text-color: #292929;
 
      @media (max-width: 800px) {
           padding: 15px 0;
+          flex-direction: column;
      }
+}
 
-
+.footer {
      &__org {
-          max-width: 300px;
-
           @media (max-width: 800px) {
-               max-width: 40%;
+               margin-bottom: 20px;
           }
      
      }
-
-     &__dev {
-          max-width: 300px;
-
-          @media (max-width: 800px) {
-               max-width: 40%;
-          }
-     
-     };
 }
 
 .social {
